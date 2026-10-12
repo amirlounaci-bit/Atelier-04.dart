@@ -1,10 +1,17 @@
 import 'exercice08.dart';
 
 void main() {
-  print("--- Test Question 4 ---");
-  var livre1 = Livre("L'Étranger", "Albert Camus");
-  var livre2 = Livre("Notre-Dame de Paris", "Victor Hugo");
+  print("--- Lancement de l'Exercice 8 ---");
 
-  livre1.afficherInfos();
-  livre2.afficherInfos();
+  var roman1 = Roman("Le Code de la peur", "Un Auteur", "Policier", 350);
+  var roman2 = Roman("Dune", "Frank Herbert", "Science-Fiction", 600);
+
+  roman1.afficherInfos();
+  roman2.afficherInfos();
+
+  print("---------------------------------");
+  Livre.afficherTotal();
+
+  print("--- Fin du programme ---");
 }
+
